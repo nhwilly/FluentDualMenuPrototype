@@ -155,32 +155,44 @@ code {
             display: none;
         }
 
-    #account-main-menu {
+    /*    #account-main-menu {
         width: 100% !important;
     }
 
-        #account-main-menu > div:first-child:is(.expander) {
+        #account-main-menu > .expander * {
             display: none;
         }
-
+*/
 
 
     .navmenu {
         width: 100%;
     }
 
+    #navmenu-toggle,
+    #navmenu-toggle2,
     #navmenu-toggle.account,
-    #navmenu-toggle.user {
+    #navmenu-toggle.user,
+    #navmenu-toggle2.account,
+    #navmenu-toggle2.user {
         appearance: none;
     }
 
+        #navmenu-toggle ~ nav,
+        #navmenu-toggle2 ~ nav,
         #navmenu-toggle.account ~ nav,
-        #navmenu-toggle.user ~ nav {
+        #navmenu-toggle.user ~ nav
+        #navmenu-toggle2.account ~ nav,
+        #navmenu-toggle2.user ~ nav {
             display: none;
         }
 
+        #navmenu-toggle:checked ~ nav,
+        #navmenu-toggle2:checked ~ nav,
         #navmenu-toggle.account:checked ~ nav,
-        #navmenu-toggle.user:checked ~ nav {
+        #navmenu-toggle.user:checked ~ nav
+        #navmenu-toggle2.account:checked ~ nav,
+        #navmenu-toggle2.user:checked ~ nav {
             display: block;
         }
 

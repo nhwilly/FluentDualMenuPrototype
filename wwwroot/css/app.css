@@ -155,14 +155,13 @@ code {
             display: none;
         }
 
-    /*    #account-main-menu {
+    #account-main-menu {
         width: 100% !important;
     }
 
-        #account-main-menu > .expander * {
+        #account-main-menu > div:first-child:is(.expander) {
             display: none;
         }
-*/
 
 
     .navmenu {

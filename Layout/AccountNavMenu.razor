@@ -1,8 +1,8 @@
 ﻿<div class="navmenu">
-    <input type="checkbox" title="Menu expand/collapse toggle" id="navmenu-toggle" class="navmenu-icon" />
+    <input type="checkbox" title="Menu expand/collapse toggle" id="navmenu-toggle" class="navmenu-icon account" />
     <label for="navmenu-toggle" class="account-navmenu-icon"><FluentIcon Value="@(new Icons.Regular.Size20.Navigation())" Color="Color.Fill" /></label>
-    <nav class="sitenav" aria-labelledby="main-menu">
-        <FluentNavMenu Id="main-menu" Width="250" Collapsible="true" Title="Navigation menu" @bind-Expanded="expanded" CustomToggle="true">
+    <nav class="sitenav" aria-labelledby="account-main-menu">
+        <FluentNavMenu Id="account-main-menu" Width="250" Collapsible="true" Title="Navigation menu" @bind-Expanded="expanded" CustomToggle="true">
             <FluentNavLink Href="/" Match="NavLinkMatch.All" Icon="@(new Icons.Regular.Size20.Building())" IconColor="Color.Accent">Account Dashboard</FluentNavLink>
             <FluentNavLink Href="counter" Icon="@(new Icons.Regular.Size20.PersonAccounts())" IconColor="Color.Accent">Info</FluentNavLink>
             <FluentNavLink Href="weather" Icon="@(new Icons.Regular.Size20.BuildingDesktop())" IconColor="Color.Accent">Some other thing</FluentNavLink>

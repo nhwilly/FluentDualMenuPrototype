@@ -155,31 +155,32 @@ code {
             display: none;
         }
 
+    #account-main-menu {
+        width: 100% !important;
+    }
+
+        #account-main-menu > div:first-child:is(.expander) {
+            display: none;
+        }
+
+
+
     .navmenu {
         width: 100%;
     }
 
-    #navmenu-toggle {
+    #navmenu-toggle.account,
+    #navmenu-toggle.user {
         appearance: none;
     }
 
-        #navmenu-toggle ~ nav {
+        #navmenu-toggle.account ~ nav,
+        #navmenu-toggle.user ~ nav {
             display: none;
         }
 
-        #navmenu-toggle:checked ~ nav {
-            display: block;
-        }
-
-    #user-navmenu-toggle {
-        appearance: none;
-    }
-
-        #user-navmenu-toggle ~ nav {
-            display: none;
-        }
-
-        #user-navmenu-toggle:checked ~ nav {
+        #navmenu-toggle.account:checked ~ nav,
+        #navmenu-toggle.user:checked ~ nav {
             display: block;
         }
 
